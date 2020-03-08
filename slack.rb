@@ -37,5 +37,5 @@ channels.each do |channel|
     user_list << member["real_name"] if member
   end
 
-  puts "#{channel['id']}\t#{channel['name']}\t#{user_list.join("\t")}"
+  puts "#{channel['id']},#{channel['name']},#{user_list.join(",")}"
 end
